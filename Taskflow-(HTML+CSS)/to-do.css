@@ -25,8 +25,8 @@
         scale: 1 100%;}
 }
 @keyframes Start {
-    from {opacity: 0;
-    translate: 0 20px;}
+    from {opacity: 0.1;
+    translate: 0 15px;}
     to {opacity: 1;
     translate: 0 0;}
 }
@@ -44,8 +44,8 @@ header {
     border-radius: 50px;
     margin: 20px auto;
     cursor: default;
-    animation: Start linear 0.8s;
-    animation-delay: 0.2s;
+    animation: Start linear 0.6s;
+    animation-delay: 0.1s;
     overflow: hidden;
     translate: x(0);
     opacity: 0;
@@ -87,8 +87,8 @@ body {
     max-height: 100px;
     max-width: 20%;
     cursor: pointer;
-    animation: fadeIn linear 0.8s;
-    animation-delay: 0.1s;
+    animation: Start linear 0.6s;
+    animation-delay: 0.2s;
     opacity: 0;
     animation-fill-mode: forwards;
     box-shadow: 0px 0px 30px 20px rgba(255, 255, 255, 0.226);
