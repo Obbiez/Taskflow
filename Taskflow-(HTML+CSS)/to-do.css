@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +52,7 @@ header {
     box-shadow: 5px 5px 12px 5px rgba(0, 0, 0, 0.226);
     display: flex;
     text-align: left;
-    background-color: #526D82;
+    background-color: #222831;
     border-radius: 50px;
     margin: 20px auto;
     cursor: default;
@@ -77,18 +78,18 @@ header {
     margin-left: 45px;
     font-weight: lighter;
     margin-top: 55px;
-    color: #9DB2BFa9;
+    color: #76ABAEa9;
 }
 body {
-    background: linear-gradient(200deg, #DDE6ED, #b1b9be 100%);
-    color: #9DB2BF;
+    background: linear-gradient(15deg, #292c2e, #111213);
+    color: #76ABAE;
     overflow: hidden;
 }
 .managelist {
     margin: 0 auto;
     font-size: 26px;
     font-family: 'Roboto', 'serif';
-    background-color: #526D82;
+    background-color: #222831;
     border: solid 1px rgba(128, 128, 128, 0.521);
     border-radius: 15px;
     margin-top: 340px;
@@ -103,17 +104,17 @@ body {
 }
 .managelist h1 {
     padding: 10px;
-    color: #9DB2BF;
+    color: #76ABAE;
     text-align: center;
 }
 .managelist:hover {
     transform: scale(1.05);
-    background-color: #00ADB5;
+    background-color: #76ABAE;
     transition: 0.3s;
     text-decoration: underline;
-    color: #46494c;
+    color: #222831;
 }
 .managelist h1:hover {
-    color: #46494c;
+    color: #222831;
     transition: 0.3s;
 }
