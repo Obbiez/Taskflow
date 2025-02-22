@@ -16,6 +16,20 @@
         opacity: 1;
       }
 }
+@keyframes fadeIn {
+    from {opacity: 0;
+        translate: 0 1000px;
+        scale: 1 200%;}
+    to {opacity: 1;
+        translate: 0 0;
+        scale: 1 100%;}
+}
+@keyframes Start {
+    from {opacity: 0;
+    translate: 0 20px;}
+    to {opacity: 1;
+    translate: 0 0;}
+}
 header {
     overflow-x: hidden;
 }
@@ -30,7 +44,7 @@ header {
     border-radius: 50px;
     margin: 20px auto;
     cursor: default;
-    animation: headeranimation linear 0.8s;
+    animation: Start linear 0.8s;
     animation-delay: 0.2s;
     overflow: hidden;
     translate: x(0);
@@ -61,14 +75,6 @@ body {
     background-color: black;
     color: #c5c3c6;
     overflow: hidden;
-}
-@keyframes fadeIn {
-    from {opacity: 0;
-        translate: 0 1000px;
-        scale: 1 200%;}
-    to {opacity: 1;
-        translate: 0 0;
-        scale: 1 100%;}
 }
 .managelist {
     margin: 0 auto;
