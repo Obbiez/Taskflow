@@ -73,10 +73,15 @@
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
 }
+#theme-switch:hover {
+    transform: scale(1.075);
+    transition: 0.2s;
+}
 #theme-switch svg{
     fill: var(--text-color);
     color: var(--text-color);
-    scale: 0.5;
+    height: 50%;
+    width: 50%;
 }
 #theme-switch svg:last-child {
     display: none;
@@ -147,7 +152,7 @@ body {
     max-width: 20%;
     cursor: pointer;
     animation: Start linear 0.6s;
-    animation-delay: 0.2s;
+    animation-delay: 0.15s;
     opacity: 0;
     animation-fill-mode: forwards;
     box-shadow: 0px 0px 10px 5px var(--shadow-color);
@@ -178,6 +183,9 @@ body {
 @media screen and (max-width: 1320px){ 
     .managelist h1 {
         font-size: 35px;
+    }
+    #theme-switch {
+        scale: 0.9;
     }
 }
 @media screen and (max-width: 1050px){ 
