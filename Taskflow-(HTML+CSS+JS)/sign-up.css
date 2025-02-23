@@ -8,7 +8,6 @@
         translate: 0 10px;
     }
 }
-@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
@@ -107,4 +106,56 @@ header {
     font-weight: lighter;
     margin-top: 55px;
     color: var(--subheading-color);
+}
+@media screen and (max-width: 1505px){ 
+}
+@media screen and (max-width: 1320px){ 
+    #theme-switch {
+        scale: 0.8;
+        right: 150px;
+    }
+
+}
+@media screen and (max-width: 1050px){ 
+    #theme-switch {
+        right: 100px;
+        scale: 0.6;
+        top: 35px;
+    }
+}
+@media screen and (max-width: 780px){ 
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header h3 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    #theme-switch {
+        top: 25px;
+    }
+}
+@media screen and (max-width: 530px){ 
+    .header h3 {
+        font-size: 22px;
+        margin-left: 0;
+    }
+    .header h1 {
+        font-size: 48px;
+        margin-left: 0;
+    }
+    .header {
+        width: 90%;
+        text-align: center;
+    }
+    #theme-switch {
+        right: 50px;
+        top: 25px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header {
+        text-align: center !important;
+    }
 }

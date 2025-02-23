@@ -1,9 +1,7 @@
 const managelist = document.querySelector('.managelist'); // managelist button defined
-
 const submit = document.querySelector('.submit'); 
 const password = document.getElementById('Password');
 const username = document.getElementById('Username');
-
 let login = false;
 
 submit.addEventListener('click', () => {
@@ -13,8 +11,6 @@ submit.addEventListener('click', () => {
         login = localStorage.setItem('login', 'false');
     }
 })
-
-let redirect = localStorage.getItem('login');
 
 managelist.addEventListener('click', () => {
     localStorage.getItem('login') === 'true' ?
