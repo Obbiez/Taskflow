@@ -39,6 +39,16 @@
         translate: 0 10px;
     }
 }
+:root {
+    --linear-gradient1: #35393b;
+    --linear-gradient2: #111213;
+    --main-color: #222831;
+    --text-color: #76ABAE;
+    --subheading-color: #76ABAEa9;
+    --shadow-color: rgba(0, 255, 221, 0.137);
+    --border-color: rgba(128, 128, 128, 0.521);
+    
+}
 #spacer {
     margin-top: 100%;
 }
@@ -48,11 +58,11 @@ header {
 .header {
     width: 85%;
     max-height: 320px;
-    border: solid 1px rgba(128, 128, 128, 0.521);
-    box-shadow: 5px 5px 12px 5px rgba(0, 255, 221, 0.137);
+    border: solid 1px var(--border-color);
+    box-shadow: 5px 5px 12px 5px var(--shadow-color);
     display: flex;
     text-align: left;
-    background-color: #222831;
+    background-color: var(--main-color);
     border-radius: 50px;
     margin: 20px auto;
     cursor: default;
@@ -82,8 +92,8 @@ header {
     color: #76ABAEa9;
 }
 body {
-    background: linear-gradient(11deg, #35393b, #111213);
-    color: #76ABAE;
+    background: linear-gradient(11deg, var(--linear-gradient1), var(--linear-gradient2));
+    color: var(--text-color);
     overflow: hidden;
     background-repeat: no-repeat;
 }
@@ -91,8 +101,8 @@ body {
     margin: 0 auto;
     font-size: 26px;
     font-family: 'Roboto', 'serif';
-    background-color: #222831;
-    border: solid 1px rgba(128, 128, 128, 0.521);
+    background-color: var(--main-color);
+    border: solid 1px var(--border-color);
     border-radius: 15px;
     margin-top: 300px;
     max-height: 100px;
@@ -102,23 +112,25 @@ body {
     animation-delay: 0.2s;
     opacity: 0;
     animation-fill-mode: forwards;
-    box-shadow: 0px 0px 10px 5px rgba(0, 255, 221, 0.137);
+    box-shadow: 0px 0px 10px 5px var(--shadow-color);
 }
 .managelist h1 {
     padding: 10px;
-    color: #76ABAE;
+    color: var(--text-color);
     text-align: center;
 }
 .managelist:hover {
     transform: scale(1.05);
-    background-color: #76ABAE;
+    background-color: var(--text-color);
     transition: 0.3s;
     text-decoration: underline;
-    color: #222831;
+    color: var(--main-color);
+    transition-delay: 0.01s;
 }
 .managelist h1:hover {
-    color: #222831;
+    color: var(--main-color);
     transition: 0.3s;
+    transition-delay: 0.01s;
 }
 @media screen and (max-width: 1505px){ 
     .managelist h1 {
