@@ -43,10 +43,12 @@
     position: fixed;
     right: 190px;
     top: 80px;
+    border: var(--border-color) 2px dotted;
 }
 #theme-switch:hover {
     transform: scale(1.08);
     transition: 0.2s;
+    border: var(--border-color) 2px solid;
 }
 #theme-switch svg{
     fill: var(--text-color);
@@ -106,6 +108,43 @@ header {
     font-weight: lighter;
     margin-top: 55px;
     color: var(--subheading-color);
+}
+.container {
+    background-color: var(--main-color);
+    width: 20%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 32px;
+    margin-top: 150px;
+    border: var(--border-color) 1px solid;
+    box-shadow: 0px 0px 10px 5px var(--shadow-color);
+}
+.container h1 {
+    text-align: center;
+    font-size: 60px;
+    padding: 10px;
+}
+.forms {
+    margin-top: 20px;
+    padding: 10px;
+}
+.forms label {
+    display: flex;
+}
+.submit {
+    background-color: var(--text-color);
+    width: 80%;
+    height: 75px;
+    border-radius: 16px;
+    margin: 0 auto;
+    display: flex;
+    border: none;
+}
+.checkbox {
+    display: inline-block;
+}
+.remember-me {
+    display: inline-block;
 }
 @media screen and (max-width: 1505px){ 
 }

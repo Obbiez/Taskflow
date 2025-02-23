@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taskflow - Sign Up</title>
+    <title>TaskFlow - Sign Up</title>
     <script type="text/javascript" src="lightmode.js" defer></script>
     <script type="text/javascript" src="sign-up.js" defer></script>
     <link rel="stylesheet" href="sign-up.css">
@@ -26,12 +26,14 @@
             <h1> Sign up!</h1>
             <div class="forms">
               <div class="username-container">
-                <label for="Username" class="form-label">Username</label>
+                <label for="Username" class="form-label">Username:</label>
                 <input type="text" class="form-control" name="Username" id="Username" placeholder="Username" minlength="3" maxlength="16" required>
               </div>
                 <div class="password-container">
-                <label for="Password" class="form-label">Password</label>
+                <label for="Password" class="form-label">Password:</label>
                 <input type="password" class="form-control" name="Password" id="Password" placeholder="Password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+                <label for="checkbox" class="checkbox">Remember Me</label>
+                <input type="checkbox" class="remember-me">
                 <input type="submit" class="submit" value="Submit">
                 <h6></h6>
               </div>

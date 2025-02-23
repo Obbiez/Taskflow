@@ -72,10 +72,12 @@
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
     opacity: 0;
+    border: var(--border-color) 2px dotted;
 }
 #theme-switch:hover {
     transform: scale(1.08);
     transition: 0.2s;
+    border: var(--border-color) 2px solid;
 }
 #theme-switch svg{
     fill: var(--text-color);
