@@ -36,7 +36,7 @@
     }
     to {
         opacity: 1;
-        translate: 0 30px;
+        translate: 0 10px;
     }
 }
 #spacer {
@@ -85,6 +85,7 @@ body {
     background: linear-gradient(11deg, #35393b, #111213);
     color: #76ABAE;
     overflow: hidden;
+    background-repeat: no-repeat;
 }
 .managelist {
     margin: 0 auto;
@@ -93,7 +94,7 @@ body {
     background-color: #222831;
     border: solid 1px rgba(128, 128, 128, 0.521);
     border-radius: 15px;
-    margin-top: 340px;
+    margin-top: 300px;
     max-height: 100px;
     max-width: 20%;
     cursor: pointer;
@@ -124,4 +125,59 @@ body {
 }
 #dark {
     color: rgba(0, 0, 0, 0.555);
+}
+@media screen and (max-width: 1505px){ 
+    .managelist h1 {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 1320px){ 
+    .managelist h1 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 1050px){ 
+    .managelist h1 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 780px){ 
+    .managelist h1 {
+        font-size: 15px;
+    }
+    .managelist:hover {
+        transform: scale(1.05);
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header h3 {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 530px){ 
+    .managelist  {
+        max-width: 35%;
+    }
+    .header h3 {
+        font-size: 22px;
+        margin-left: 0;
+    }
+    .header h1 {
+        font-size: 48px;
+        margin-left: 0;
+    }
+    .header {
+        width: 90%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header {
+        text-align: center !important;
+    }
+    .managelist {
+        margin-top: 200px;
+    }
 }
