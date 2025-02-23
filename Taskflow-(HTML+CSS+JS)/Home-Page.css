@@ -76,14 +76,14 @@
     opacity: 0;
 }
 #theme-switch:hover {
-    transform: scale(1.075);
+    transform: scale(1.08);
     transition: 0.2s;
 }
 #theme-switch svg{
     fill: var(--text-color);
     color: var(--text-color);
-    height: 50%;
-    width: 50%;
+    height: 40%;
+    width: 40%;
 }
 #theme-switch svg:last-child {
     display: none;
@@ -187,12 +187,19 @@ body {
         font-size: 35px;
     }
     #theme-switch {
-        scale: 0.9;
+        scale: 0.8;
+        right: 150px;
     }
+
 }
 @media screen and (max-width: 1050px){ 
     .managelist h1 {
         font-size: 25px;
+    }
+    #theme-switch {
+        right: 100px;
+        scale: 0.6;
+        top: 35px;
     }
 }
 @media screen and (max-width: 780px){ 
@@ -207,7 +214,11 @@ body {
         text-align: center;
     }
     .header h3 {
-        margin-top: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    #theme-switch {
+        top: 25px;
     }
 }
 @media screen and (max-width: 530px){ 
@@ -225,6 +236,10 @@ body {
     .header {
         width: 90%;
         text-align: center;
+    }
+    #theme-switch {
+        right: 50px;
+        top: 25px;
     }
 }
 @media screen and (max-width: 400px) {
