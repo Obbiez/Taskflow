@@ -8,7 +8,7 @@
     <script type="text/javascript" href="sign-up.js"></script>
     <link rel="stylesheet" href="sign-up.css">
 </head>
-<body>
+<body class="lightmode">
     <header>
         <div class="header">
             <h1> Taskflow </h1>
@@ -25,13 +25,15 @@
         <div class="container">
             <h1> Sign up!</h1>
             <div class="forms">
-              <div class="username">
-                <label for="password" class="form-label" >Username</label>
-                <input type="text" class="form-control" name="Username" id="Username" placeholder="Username" required>
+              <div class="username-container">
+                <label for="password" class="form-label">Username</label>
+                <input type="text" class="form-control" name="Username" id="Username" placeholder="Username" required minlength="3" maxlength="16">
               </div>
-                <div class="password">
+                <div class="password-container">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" name="Password" id="Password" placeholder="Password" required/>
+                <input type="password" class="form-control" name="Password" id="Password" placeholder="Password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+                <button type="submit" class="submit"> Submit </button>
+                <h6></h6>
               </div>
             </div>
         </div>
