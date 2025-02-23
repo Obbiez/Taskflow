@@ -7,7 +7,11 @@ const username = document.getElementById('Username');
 let login = false;
 
 loggedIn.AddEventListener('click', () => {
-    if ()
+    if (console.log(length.password) < 8 && console.log(length.username < 3)) {
+        login = true;
+    } else {
+        login = false;
+    }
 })
 
 let redirect = localStorage.getItem('login');
