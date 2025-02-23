@@ -57,6 +57,22 @@
     --shadow-color: rgba(0, 100, 90, 0.137);
     --border-color: rgba(180, 180, 180, 0.7);
 }
+#theme-switch {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 190px;
+    top: 70px;
+    animation: Start linear 0.6s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+}
 #spacer {
     margin-top: 100%;
 }
