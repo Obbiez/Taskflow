@@ -1,23 +1,23 @@
-const managelist = document.getElementsByClassName('managelist'); // managelist button defined
+const managelist = document.querySelector('.managelist'); // managelist button defined
 
-const submit = document.getElementsByClassName('submit'); 
+const submit = document.querySelector('.submit'); 
 const password = document.getElementById('Password');
 const username = document.getElementById('Username');
 
 let login = false;
 
-loggedIn.AddEventListener('click', () => {
-    if (console.log(length.password) < 8 && console.log(length.username < 3)) {
-        login = true;
+submit.addEventListener('click', () => {
+    if (password.value.length > 8 && username.value.length > 3) {
+        login = localStorage.setItem('login', 'true');
     } else {
-        login = false;
+        login = localStorage.setItem('login', 'false');
     }
 })
 
 let redirect = localStorage.getItem('login');
 
-managelist.AddEventListener('click', () => {
-    redirect === 'login' ?
+managelist.addEventListener('click', () => {
+    localStorage.getItem('login') === 'true' ?
     window.location.href = 'login.html'
     : window.location.href = 'sign-up.html'
 })
