@@ -120,12 +120,6 @@ body {
     color: #222831;
     transition: 0.3s;
 }
-#light {
-    color: rgba(255, 255, 255, 0.555);
-}
-#dark {
-    color: rgba(0, 0, 0, 0.555);
-}
 @media screen and (max-width: 1505px){ 
     .managelist h1 {
         font-size: 45px;
