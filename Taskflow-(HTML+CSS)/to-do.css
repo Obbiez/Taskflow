@@ -47,7 +47,15 @@
     --subheading-color: #76ABAEa9;
     --shadow-color: rgba(0, 255, 221, 0.137);
     --border-color: rgba(128, 128, 128, 0.521);
-    
+}
+.lightmode {
+    --linear-gradient1: #e6e8e9;
+    --linear-gradient2: #b1b1b1;
+    --main-color: rgb(221, 221, 221);
+    --text-color: #355f63;
+    --subheading-color: #355f63a9;
+    --shadow-color: rgba(0, 100, 90, 0.137);
+    --border-color: rgba(180, 180, 180, 0.7);
 }
 #spacer {
     margin-top: 100%;
@@ -89,7 +97,7 @@ header {
     margin-left: 45px;
     font-weight: lighter;
     margin-top: 55px;
-    color: #76ABAEa9;
+    color: var(--subheading-color);
 }
 body {
     background: linear-gradient(11deg, var(--linear-gradient1), var(--linear-gradient2));
