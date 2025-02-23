@@ -73,6 +73,20 @@
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
 }
+#theme-switch svg{
+    fill: var(--text-color);
+    color: var(--text-color);
+    scale: 0.5;
+}
+#theme-switch svg:last-child {
+    display: none;
+}
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+.darmode #theme-switch svg:last-child {
+    display: block;
+}
 #spacer {
     margin-top: 100%;
 }
