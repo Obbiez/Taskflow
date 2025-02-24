@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskFlow - Sign Up</title>
-    <script type="text/javascript" src="lightmode.js" defer></script>
-    <script type="text/javascript" src="sign-up.js" defer></script>
     <link rel="stylesheet" href="sign-up.css">
 </head>
 <body>
     <header>
         <div class="header">
             <h1> Taskflow </h1>
-            <h3> Stay Organized. Stay Ahead.</h3>
+            <h3> Stay Organized. Stay Ahead. </h3>
         </div>
         <div>
             <button id="theme-switch">
@@ -24,22 +22,24 @@
     <main>
         <div class="container">
             <h1> Sign up!</h1>
-            <div class="forms">
+            <form class="forms">
               <div class="username-container">
                 <label for="Username" class="form-label">Username:</label>
                 <input type="text" class="form-control" name="Username" id="Username" placeholder="Username" minlength="3" maxlength="16" required>
               </div>
-                <div class="password-container">
                 <label for="Password" class="form-label">Password:</label>
                 <input type="password" class="form-control" name="Password" id="Password" placeholder="Password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
-                <label for="checkbox" class="checkbox">Remember Me</label>
-                <input type="checkbox" class="remember-me">
+                <label for="remember-me" class="checkbox">Remember Me</label>
+                <input type="checkbox" class="remember-me" id="remember-me" name="remember-me">
                 <input type="submit" class="submit" value="Submit">
                 <h6></h6>
               </div>
-            </div>
+              <!-- Password must contain at least one number, one lowercase and one uppercase letter, and at least 8 or more characters -->
+            </form>
         </div>
     </main>
     <div class="spacer"></div>
+    <script type="text/javascript" src="lightmode.js" defer></script>
+    <script type="text/javascript" src="sign-up.js" defer></script>
 </body>
 </html>

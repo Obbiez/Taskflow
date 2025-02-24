@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @keyframes Start {
     from {
         opacity: 0.1;
@@ -8,11 +9,10 @@
         translate: 0 10px;
     }
 }
-@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', 'serif';
+    font-family: 'Roboto', serif;
 }
 :root {
     --linear-gradient1: #35393b;
@@ -135,17 +135,27 @@ header {
 .submit {
     background-color: var(--text-color);
     width: 80%;
-    height: 75px;
+    height: 50px;
     border-radius: 16px;
     margin: 0 auto;
     display: flex;
-    border: none;
+    border: solid 2px var(--border-color);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: var(--subheading-color);
 }
 .checkbox {
     display: inline-block;
 }
 .remember-me {
     display: inline-block;
+}
+.form-control {
+    background-color: var(--linear-gradient1);
 }
 @media screen and (max-width: 1505px){ 
 }
