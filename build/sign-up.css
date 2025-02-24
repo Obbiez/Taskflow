@@ -142,11 +142,15 @@ header {
     border: solid 2px var(--border-color);
     font-size: 20px;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 40px;
     cursor: pointer;
 }
 .submit:hover {
     background-color: var(--subheading-color);
+}
+.submit:active {
+    scale: 1.06;
+    transition: 0.1s;
 }
 .checkbox {
     display: inline-block;
