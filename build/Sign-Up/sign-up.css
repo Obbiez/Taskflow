@@ -12,6 +12,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', 'serif';
 }
 :root {
     --linear-gradient1: #35393b;

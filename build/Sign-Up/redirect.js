@@ -2,6 +2,7 @@ const managelist = document.querySelector('.managelist'); // managelist button d
 const submit = document.querySelector('.submit'); 
 const password = document.getElementById('Password');
 const username = document.getElementById('Username');
+const rememberMe = document.querySelector('.remember-me')
 let login = false;
 
 submit.addEventListener('click', () => {
@@ -9,6 +10,11 @@ submit.addEventListener('click', () => {
         login = localStorage.setItem('login', 'true');
     } else {
         login = localStorage.setItem('login', 'false');
+    }
+})
+rememberMe.addEventListener('click', () => {
+    if (password.value.length > 8 && username.value.length > 3 && submit.addEventListener('click')) {
+        
     }
 })
 
