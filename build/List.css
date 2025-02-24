@@ -61,7 +61,7 @@
 .darkmode #theme-switch svg:first-child {
     display: none;
 }
-.darmode #theme-switch svg:last-child {
+.darkmode #theme-switch svg:last-child {
     display: block;
 }
 header {
@@ -109,8 +109,8 @@ body {
     overflow: hidden;
     background-repeat: no-repeat;
 }
-#Spacer {
-    height: 100%;
+.spacer {
+    margin-top: 100%;
 }
 @media screen and (max-width: 1505px){ 
 }

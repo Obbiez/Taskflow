@@ -4,7 +4,7 @@ let rememberMe = true;
 
 getStarted.addEventListener('click', () => {
     if (isLoggedIn === true && rememberMe === true) {
-        window.location.href = 'Manage-List-Page/List.html';
+        window.location.href = 'List.html';
     } else {
         window.location.href = 'sign-up.html';
     }
