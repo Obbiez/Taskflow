@@ -1,26 +1,30 @@
-const manageList = document.querySelector('.managelist'); // managelist button defined
+const managelist = document.querySelector('.managelist'); // managelist button defined
 const submit = document.querySelector('.submit'); 
 const password = document.getElementById('Password');
 const username = document.getElementById('Username');
 const form = document.querySelector('.forms');
-
 // const rememberMe = document.querySelector('.remember-me') //
 
 let login = localStorage.getItem('login') || 'false';
+
+if (localStorage.getItem('login') === null) {
+    localStorage.setItem('login', 'false'); // Set default login value
+}
+
 if (form) {
-    form.addEventListener('submit', (event) => {
+    submit.addEventListener('click', () => {
        event.preventDefault();
           if (password.value.length >= 8 && username.value.length > 3) {
-             localStorage.setItem('login', 'true');
-              form.submit();
+              localStorage.setItem('login', 'true');
               window.location.href = 'List.html';
+              console.log('works');
           } else {
-             localStorage.setItem('login', 'false');
+              localStorage.setItem('login', 'false');
           }
 })
 }
-if (manageList) {
-    manageList.addEventListener('click', () => {
+if (managelist) {
+    managelist.addEventListener('click', () => {
         if (localStorage.getItem('login') === 'true') {
              window.location.href = 'List.html';
         } else {
