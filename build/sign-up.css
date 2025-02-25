@@ -177,6 +177,9 @@ header {
     padding-bottom: 5px;
     padding-left: 1.5px;
 }
+.hide {
+    display: none;
+}
 @media screen and (max-width: 1505px){ 
 }
 @media screen and (max-width: 1320px){ 

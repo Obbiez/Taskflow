@@ -179,6 +179,9 @@ body {
     transition: 0.3s;
     transition-delay: 0.01s;
 }
+.hide {
+    display: none;
+}
 @media screen and (max-width: 1505px){ 
     .managelist h1 {
         font-size: 45px;

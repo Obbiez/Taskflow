@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @keyframes Start {
     from {
         opacity: 0.1;
@@ -7,6 +8,11 @@
         opacity: 1;
         translate: 0 10px;
     }
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', serif;
 }
 :root {
     --linear-gradient1: #35393b;
@@ -37,12 +43,9 @@
     align-items: center;
     position: fixed;
     right: 190px;
-    top: 70px;
-    animation: Start linear 0.6s;
-    animation-delay: 0.1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
+    top: 80px;
     border: var(--border-color) 2px dotted;
+    cursor: pointer !important;
 }
 #theme-switch:hover {
     transform: scale(1.08);
@@ -64,6 +67,15 @@
 .lightmode #theme-switch svg:last-child {
     display: block;
 }
+body {
+    background: linear-gradient(11deg, var(--linear-gradient1), var(--linear-gradient2));
+    color: var(--text-color);
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.spacer {
+    margin-top: 100%;
+}
 header {
     overflow: visible;
 }
@@ -78,12 +90,8 @@ header {
     border-radius: 50px;
     margin: 20px auto;
     cursor: default;
-    animation: Start linear 0.6s;
-    animation-delay: 0.1s;
     overflow: hidden;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .header h1 {
     font-family: 'Roboto', 'serif';
@@ -102,15 +110,6 @@ header {
     font-weight: lighter;
     margin-top: 55px;
     color: var(--subheading-color);
-}
-body {
-    background: linear-gradient(11deg, var(--linear-gradient1), var(--linear-gradient2));
-    color: var(--text-color);
-    overflow: hidden;
-    background-repeat: no-repeat;
-}
-.spacer {
-    margin-top: 100%;
 }
 @media screen and (max-width: 1505px){ 
 }
