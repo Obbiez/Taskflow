@@ -50,6 +50,7 @@ if (localStorage.getItem('login') === 'false') {
 if (logOut) {
     logOut.addEventListener('click', () => {
         localStorage.setItem('login', 'false');
+        window.location.href = 'sign-up.html';
     });
 }
 
