@@ -7,7 +7,16 @@ const logOut = document.querySelector('#log-out');
 const lists = document.querySelector('#lists');
 const schedules = document.querySelector('#schedules');
 // const rememberMe = document.querySelector('.remember-me') //
-
+if (lists) {
+    lists.addEventListener('click', () => {
+        window.location.href = 'List.html'
+    })
+}
+if (schedules) {
+    schedules.addEventListener('click', () => {
+        window.location.href = 'schedules.html'
+    })
+}
 let login = localStorage.getItem('login') || 'false';
 
 if (localStorage.getItem('login') === null) {
@@ -52,6 +61,7 @@ if (logOut) {
         localStorage.setItem('login', 'false');
     });
 }
+
 
 /* rememberMe.addEventListener('click', () => {
     if (password.value.length >= 8 && username.value.length > 3 && submit.addEventListener('click')) {

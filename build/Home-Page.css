@@ -67,7 +67,7 @@
     align-items: center;
     position: fixed;
     right: 190px;
-    top: 70px;
+    top: 20px;
     animation: Start linear 0.6s;
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
@@ -136,6 +136,30 @@ header {
     font-weight: lighter;
     margin-top: 55px;
     color: var(--subheading-color);
+}
+header button {
+    padding: 5px;
+    width: 10%;
+    height: 35px;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background-color: var(--linear-gradient1);
+    color: var(--text-color);
+    margin-top: 50px;
+    margin-left: 45px;
+}
+header button:hover {
+    scale: 1.06;
+    transition: 0.1s;
+    cursor: pointer;
+}
+#lists, #schedules, #log-out {
+    font-weight: light;
+    font-size: 17px;
+
+}
+#lists {
+    margin-left: 100px;
 }
 body {
     background: linear-gradient(11deg, var(--linear-gradient1), var(--linear-gradient2));
