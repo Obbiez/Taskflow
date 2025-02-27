@@ -114,7 +114,7 @@ header {
 .container {
     background-color: var(--main-color);
     width: 20%;
-    height: 400px;
+    height: 475px;
     margin: 0 auto;
     border-radius: 32px;
     margin-top: 150px;
@@ -146,6 +146,7 @@ header {
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;
+    color: var(--linear-gradient2);
 }
 .submit:hover {
     background-color: var(--subheading-color);
@@ -203,6 +204,32 @@ header button:hover {
 }
 #lists {
     margin-left: 100px;
+}
+.signInWithGoogle {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.Google {
+    min-width: 5%;
+    min-height: 5%;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    background-color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    object-fit: center;
+    display: flex;
+    margin: 15px auto;
+}
+.Google:hover {
+    background-color: var(--subheading-color);
+    cursor: pointer;
+}
+.Google:active {
+    scale: 1.06;
+    transition: 0.1s;
 }
 @media screen and (max-width: 1505px){ 
 }
