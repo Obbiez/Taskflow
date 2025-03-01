@@ -131,9 +131,6 @@ header {
     margin-top: 20px;
     padding: 10px;
 }
-.forms label {
-    display: flex;
-}
 .submit {
     background-color: var(--text-color);
     width: 80%;
@@ -176,6 +173,7 @@ header {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 1.5px;
+    display: flex;
 }
 .hide {
     display: none;
